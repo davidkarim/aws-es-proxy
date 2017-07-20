@@ -186,7 +186,7 @@ func main() {
 
 	// TODO: Use a more sophisticated args parser that can enforce arguments
 	flag.StringVar(&endpoint, "endpoint", "", "Amazon ElasticSearch Endpoint (e.g: https://dummy-host.eu-west-1.es.amazonaws.com)")
-	flag.StringVar(&listenAddress, "listen", "127.0.0.1:9200", "Local TCP port to listen on")
+	flag.StringVar(&listenAddress, "listen", "0.0.0.0:9200", "Local TCP port to listen on")
 	flag.BoolVar(&verbose, "verbose", false, "Print user requests")
 	flag.BoolVar(&prettify, "pretty", false, "Prettify verbose output")
 
